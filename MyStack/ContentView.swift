@@ -8,9 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isActived = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                HStack {
+                    Stack(isActived: $isActived)
+                    Stack(isActived: $isActived)
+                    Stack(isActived: $isActived)
+                    Stack(isActived: $isActived)
+                        .background(Color.red)
+                }
+                .padding(isActived ? 20 : 10)
+                .background(isActived ? Color.green : Color.black)
+                .onTapGesture {
+                    withAnimation() {
+                        self.isActived.toggle()
+                    }
+                }
+                NavigationLink(destination:NewPage(isActived: $isActived)) {
+                    Text("Tap")
+                        .frame(width: 100, height: 50)
+                        .font(.system(size: 30, weight: .medium))
+                        .background(Color.yellow)
+                        .cornerRadius(30)
+                }
+            }
+        }
     }
 }
 

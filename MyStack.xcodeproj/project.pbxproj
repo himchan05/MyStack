@@ -11,6 +11,8 @@
 		0E43623B27D3AF910054FF23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43623A27D3AF910054FF23 /* ContentView.swift */; };
 		0E43623D27D3AF950054FF23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E43623C27D3AF950054FF23 /* Assets.xcassets */; };
 		0E43624027D3AF950054FF23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E43623F27D3AF950054FF23 /* Preview Assets.xcassets */; };
+		0E43624727D3B2F10054FF23 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43624627D3B2F10054FF23 /* Stack.swift */; };
+		0E43624927D3B97E0054FF23 /* NewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E43624827D3B97E0054FF23 /* NewPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		0E43623A27D3AF910054FF23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E43623C27D3AF950054FF23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E43623F27D3AF950054FF23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0E43624627D3B2F10054FF23 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		0E43624827D3B97E0054FF23 /* NewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPage.swift; sourceTree = "<group>"; };
+		0E74F15627D4B01200498C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,11 @@
 		0E43623727D3AF910054FF23 /* MyStack */ = {
 			isa = PBXGroup;
 			children = (
+				0E74F15627D4B01200498C6C /* Info.plist */,
 				0E43623827D3AF910054FF23 /* MyStackApp.swift */,
 				0E43623A27D3AF910054FF23 /* ContentView.swift */,
+				0E43624827D3B97E0054FF23 /* NewPage.swift */,
+				0E43624627D3B2F10054FF23 /* Stack.swift */,
 				0E43623C27D3AF950054FF23 /* Assets.xcassets */,
 				0E43623E27D3AF950054FF23 /* Preview Content */,
 			);
@@ -138,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E43623B27D3AF910054FF23 /* ContentView.swift in Sources */,
+				0E43624727D3B2F10054FF23 /* Stack.swift in Sources */,
 				0E43623927D3AF910054FF23 /* MyStackApp.swift in Sources */,
+				0E43624927D3B97E0054FF23 /* NewPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +282,7 @@
 				DEVELOPMENT_TEAM = X37BT8TS5J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyStack/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +312,7 @@
 				DEVELOPMENT_TEAM = X37BT8TS5J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyStack/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
